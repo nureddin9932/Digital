@@ -356,7 +356,7 @@ export default function Index() {
             <motion.h1
               variants={heroVariants}
               custom={0}
-              className="text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight tracking-tight"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.08] tracking-tight"
               style={{ fontWeight: 900 }}
             >
               {t.hero.title}
@@ -365,7 +365,7 @@ export default function Index() {
             <motion.p
               variants={heroVariants}
               custom={1}
-              className="text-2xl md:text-3xl text-gray-300 mb-4 font-bold"
+              className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-4 font-bold"
               style={{ fontWeight: 700 }}
             >
               {t.hero.subtitle}
