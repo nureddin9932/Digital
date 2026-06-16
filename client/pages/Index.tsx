@@ -333,7 +333,7 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-0 pt-28 pb-14 md:pt-32 md:pb-20">
         {/* Background effects */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-luxury-gold opacity-5 rounded-full blur-3xl animate-pulse-glow" />
@@ -348,7 +348,7 @@ export default function Index() {
 
         <div className="container mx-auto px-6 z-10 relative">
           <motion.div
-            className="text-center max-w-4xl mx-auto"
+            className="text-center max-w-3xl mx-auto"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -356,7 +356,7 @@ export default function Index() {
             <motion.h1
               variants={heroVariants}
               custom={0}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.08] tracking-tight"
+              className="mx-auto mb-5 max-w-2xl text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black leading-[1.14] tracking-tight"
               style={{ fontWeight: 900 }}
             >
               {t.hero.title}
@@ -365,7 +365,7 @@ export default function Index() {
             <motion.p
               variants={heroVariants}
               custom={1}
-              className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-4 font-bold"
+              className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 font-bold"
               style={{ fontWeight: 700 }}
             >
               {t.hero.subtitle}
@@ -374,7 +374,7 @@ export default function Index() {
             <motion.p
               variants={heroVariants}
               custom={2}
-              className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto font-medium"
+              className="text-base md:text-lg text-gray-400 mb-10 max-w-xl mx-auto font-medium leading-relaxed"
               style={{ fontWeight: 500 }}
             >
               {t.hero.description}
@@ -383,7 +383,7 @@ export default function Index() {
             <motion.div
               variants={heroVariants}
               custom={3}
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
             >
               <button className="luxury-button flex items-center gap-2">
                 {t.hero.cta1}
